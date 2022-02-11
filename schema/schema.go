@@ -12,15 +12,19 @@ import (
 
 type portsFormatChecker struct{}
 
-func (checker portsFormatChecker) IsFormat(input string) bool {
+func (checker portsFormatChecker) IsFormat(input interface{}) bool {
 	// TODO: implement this
 	return true
 }
 
 type durationFormatChecker struct{}
 
-func (checker durationFormatChecker) IsFormat(input string) bool {
-	_, err := time.ParseDuration(input)
+func (checker durationFormatChecker) IsFormat(input interface{}) bool {
+	str, ok := input.(string)
+	if !ok {
+		return false
+	}
+	_, err := time.ParseDuration(str)
 	return err == nil
 }
 

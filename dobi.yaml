@@ -5,7 +5,7 @@ meta:
 
 mount=source:
     bind: .
-    path: /go/src/github.com/aanand/compose-file
+    path: /go/src/github.com/will0523/compose-file
 
 
 image=builder:

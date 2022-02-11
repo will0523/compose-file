@@ -3,8 +3,8 @@ package interpolation
 import (
 	"fmt"
 
-	"github.com/aanand/compose-file/template"
-	"github.com/aanand/compose-file/types"
+	"github.com/will0523/compose-file/template"
+	"github.com/will0523/compose-file/types"
 )
 
 func Interpolate(config types.Dict, section string, mapping template.Mapping) (types.Dict, error) {

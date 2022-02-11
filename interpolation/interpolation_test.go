@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/aanand/compose-file/types"
+	"github.com/will0523/compose-file/types"
 )
 
 var defaults = map[string]string{
