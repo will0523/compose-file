@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/aanand/compose-file/types"
 	"github.com/stretchr/testify/assert"
+	"github.com/will0523/compose-file/types"
 )
 
 func buildConfigDetails(source types.Dict) types.ConfigDetails {
@@ -61,13 +61,13 @@ var sampleDict = types.Dict{
 	"version": "3",
 	"services": types.Dict{
 		"foo": types.Dict{
-			"image": "busybox",
+			"image":    "busybox",
 			"networks": types.Dict{"with_me": nil},
 		},
 		"bar": types.Dict{
 			"image":       "busybox",
 			"environment": []interface{}{"FOO=1"},
-			"networks": []interface{}{"with_ipam"},
+			"networks":    []interface{}{"with_ipam"},
 		},
 	},
 	"volumes": types.Dict{

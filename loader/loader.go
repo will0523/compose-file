@@ -9,13 +9,13 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/aanand/compose-file/interpolation"
-	"github.com/aanand/compose-file/schema"
-	"github.com/aanand/compose-file/types"
-	"github.com/docker/docker/runconfig/opts"
+	"github.com/docker/cli/opts"
 	units "github.com/docker/go-units"
 	shellwords "github.com/mattn/go-shellwords"
 	"github.com/mitchellh/mapstructure"
+	"github.com/will0523/compose-file/interpolation"
+	"github.com/will0523/compose-file/schema"
+	"github.com/will0523/compose-file/types"
 	yaml "gopkg.in/yaml.v2"
 )
 

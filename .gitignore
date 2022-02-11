@@ -1,3 +1,6 @@
 .dobi
 .glide
 vendor
+
+.idea
+.vscode

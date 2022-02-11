@@ -16,6 +16,6 @@ RUN     go get github.com/jteeuwen/go-bindata/... && \
         cp /go/bin/go-bindata /usr/bin/ && \
         rm -rf /go/src/* /go/pkg/* /go/bin/*
 
-WORKDIR /go/src/github.com/aanand/compose-file
+WORKDIR /go/src/github.com/will0523/compose-file
 ENV     PS1="# "
 ENV     CGO_ENABLED=0
